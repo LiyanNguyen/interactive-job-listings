@@ -5,6 +5,8 @@
 This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt).
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/50958126/196204152-ba6bbc89-8ac2-4927-8a3c-c3df091e4ada.png)
+![image](https://user-images.githubusercontent.com/50958126/196204352-dbc41216-481a-4a52-a1df-c7bc55eab27a.png)
 
 ### Links
 - Solution URL: 
