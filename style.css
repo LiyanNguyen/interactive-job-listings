@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+:root {
+	/* PRIMARY COLOR */
+	--primary1: hsl(180, 29%, 50%);
+
+	/* NEUTRAL COLORS */
+	--background: hsl(180, 52%, 96%);
+	--filterTablets: hsl(180, 31%, 95%);
+	--gray: hsl(180, 8%, 52%);
+	--black: hsl(180, 14%, 20%);
+
+	font-size: 15px;
+	font-family: 'League Spartan', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* MOBILE FIRST APPROACH */
+.top {
+	background-color: var(--primary1);
+	position: relative;
+}
+
+.top img {
+	display: block;
+	width: clamp(100%, 375px, 100%);
+	height: 156px;
+}
+
+.searchBar {
+	width: calc(100% - 2rem);
+	position: absolute;
+	bottom: -1rem;
+	left: 1rem;
+	border-radius: .5rem;
+	padding: 1rem;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 .5rem 1rem .5rem hsla(180, 29%, 50%, .1);
+}
+
+.searchBar h1 {
+	color: var(--gray);
+	cursor: default;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.searchBar span {
+	color: var(--primary1);
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.searchBar span:hover {
+	text-underline-offset: .25rem;
+	text-decoration: underline;
+}
+
+main {
+	padding: 3rem 1rem;
+	min-height: 100vh;
+	background-color: var(--filterTablets);
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.new.card {
+	border-left: .35rem solid var(--primary1);
+}
+
+.card {
+	width: 100%;
+	border-left: .35rem solid white;
+	background-color: white;
+	border-radius: .5rem;
+	box-shadow: 0 .5rem 1rem .5rem hsla(180, 29%, 50%, .1);
+	padding: 1rem;
+	position: relative;
+}
+
+.icon {
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	top: -1.5rem;
+}
+
+.icon img {
+	width: 100%;
+	display: block;
+	cursor: pointer;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.details>p:nth-child(1) {
+	color: var(--primary1);
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding-top: 1rem;
+}
+
+.details span {
+	color: var(--filterTablets);
+	padding: .5rem;
+	padding-bottom: .3rem;
+	border-radius: 1rem;
+	text-transform: uppercase;
+}
+
+.details .new {
+	background-color: var(--primary1);
+}
+
+.details .featured {
+	background-color: var(--black);
+}
+
+.details>p:nth-child(2) {
+	color: var(--black);
+	font-weight: 700;
+	cursor: pointer;
+	transition: .15s;
+}
+
+.details>p:nth-child(2):hover {
+	color: var(--primary1);
+}
+.details>p:nth-child(3) {
+	color: var(--gray);
+}
+
+.line {
+	height: .05rem;
+	background-color: var(--gray);
+	margin-block: 1rem;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.tag {
+	color: var(--primary1);
+	font-weight: 700;
+	padding: .5rem 1rem;
+	background-color: var(--filterTablets);
+	border-radius: .5rem;
+	cursor: pointer;
+	transition: .15s;
+}
+
+.tag:hover {
+	background-color: var(--primary1);
+	color: var(--filterTablets);
+}
+
+@media screen and (min-width: 1366px) {
+	main {
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.icon {
+		width: 88px;
+		height: 88px;
+		position: initial;
+	}
+
+	.card {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		width: 1200px;
+		padding: 2rem;
+	}
+
+	.line {
+		display: none;
+	}
+
+	.tags {
+		margin-left: auto;
+		justify-self: flex-end;
+	}
+
+	.details>p:nth-child(1) {
+		padding-top: initial;
+	}
+
+	.details>p:nth-child(2) {
+		font-size: 1.25rem;
+	}
+
+	.searchBar {
+		bottom: -2rem;
+		width: 1200px;
+		padding: 2rem;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
