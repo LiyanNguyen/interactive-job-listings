@@ -76,7 +76,7 @@ main {
 	border-left: .35rem solid var(--primary1);
 }
 
-.card {
+.card.active {
 	width: 100%;
 	border-left: .35rem solid white;
 	background-color: white;
@@ -84,6 +84,12 @@ main {
 	box-shadow: 0 .5rem 1rem .5rem hsla(180, 29%, 50%, .1);
 	padding: 1rem;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	display: none;
 }
 
 .icon {
@@ -183,8 +189,8 @@ main {
 		position: initial;
 	}
 
-	.card {
-		display: flex;
+	.card.active {
+		flex-direction: row;
 		gap: 1rem;
 		align-items: center;
 		width: 1200px;
