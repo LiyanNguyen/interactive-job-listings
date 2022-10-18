@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 	<title>Interactive Job Listings</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<script src="script.js" defer></script>
 </head>
 <body>
 	<div class="top">
@@ -17,7 +17,8 @@
 		</picture>
 		<div class="searchBar">
 			<h1>Selected tags will appear here</h1>
-			<span>Clear</span>
+			<div class="filters"></div>
+			<span id="clearTags">Clear</span>
 		</div>
 	</div>	
 	<main>
