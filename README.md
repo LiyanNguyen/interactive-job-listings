@@ -9,8 +9,8 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 ![image](https://user-images.githubusercontent.com/50958126/196204352-dbc41216-481a-4a52-a1df-c7bc55eab27a.png)
 
 ### Links
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/LiyanNguyen/interactive-job-listings
+- Live Site URL: https://liyannguyen.github.io/interactive-job-listings
 
 ### My Process
 - Design the Mobile viewport WHILE desinging the Desktop Viewport at the same time using
